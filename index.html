@@ -10,6 +10,20 @@
     <!-- patotoya -->
   </head>
   <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#contact">Contact me Here</a>
+        </li>
+        <li>
+          <a href="#table">Daily Schedule</a>
+        </li>
+
+        <li>
+          <a href="#connect">Connect with me</a>
+        </li>
+      </ul>
+    </nav>
     <h1>Hello <abbr title="Developers">Devs</abbr></h1>
 
     <aside title="goals hours">
@@ -30,66 +44,69 @@
           <mark>here is mt acctual hours coding </mark>
         </a>
       </details>
+      <hr />
       <br />
-      <table>
-        <caption>
-          My Daily Schedule
-        </caption>
-        <thead>
-          <tr>
-            <th>&nbsp;</th>
-            <th scope="col">Time</th>
-            <th scope="col">Current Activity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Morning</th>
-            <td>
-              <time datetime="08:00">8:00am</time>-<time datetime="11:00"
-                >11:00am</time
-              >
-            </td>
-            <td>Writing Code</td>
-          </tr>
+      <section id="table">
+        <table>
+          <caption>
+            My Daily Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Time</th>
+              <th scope="col">Current Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8:00am</time>-<time datetime="11:00"
+                  >11:00am</time
+                >
+              </td>
+              <td>Writing Code</td>
+            </tr>
 
-          <tr>
-            <th scope="row">Lunch</th>
-            <td>
-              <time datetime="11:00">11:00am</time>-<time datetime="12:00"
-                >12:00am</time
-              >
-            </td>
-            <td>Eating lunch</td>
-          </tr>
-          <tr>
-            <th scope="row">Afternoon</th>
-            <td>
-              <time datetime="12:00">12:00pm</time>-<time datetime="17:00"
-                >5:00pm</time
-              >
-            </td>
-            <td>Writing some code again</td>
-          </tr>
-          <tr>
-            <th scope="row" >evening</th>
-            <td rowspan="3">all other time</td>
-            <td>sleep</td>
-          </tr>
-          <tr>
-            <th>or</th>
-          </tr>
-          <tr>
-            <th scope="row">night</th>
-            <td>i dont know</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="3">Thats what i do what the helly</td>
-          </tr>
-        </tfoot>
-      </table>
+            <tr>
+              <th scope="row">Lunch</th>
+              <td>
+                <time datetime="11:00">11:00am</time>-<time datetime="12:00"
+                  >12:00am</time
+                >
+              </td>
+              <td>Eating lunch</td>
+            </tr>
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12:00pm</time>-<time datetime="17:00"
+                  >5:00pm</time
+                >
+              </td>
+              <td>Writing some code again</td>
+            </tr>
+            <tr>
+              <th scope="row">evening</th>
+              <td rowspan="3">all other time</td>
+              <td>sleep</td>
+            </tr>
+            <tr>
+              <th>or</th>
+            </tr>
+            <tr>
+              <th scope="row">night</th>
+              <td>i dont know</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Thats what i do what the helly</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
     </aside>
     <hr />
     <h2>&nbsp;&nbsp;&nbsp;First time <em>trying fron end</em></h2>
@@ -149,18 +166,67 @@
       </dl>
     </article>
     <hr />
+    <article id="connect">
+      <h2>Connect with me</h2>
+      <p>If you want to work with me connect with me with this</p>
+
+      <form action="https://httpbin.org/get" method="get">
+        <div>
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Type your fisrtname here"
+            autocomplete="on"
+            required
+          />
+          <!--autofocus-->
+        </div>
+        <div>
+          <label for="lastname">Last Name:</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Type your lastname here"
+            autocomplete="on"
+            required
+          />
+          <!--autofocus-->
+        </div>
+        <div>
+          <label for="password">password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Type your password here"
+            autocomplete="on"
+            required
+          />
+          <!--autofocus-->
+        </div>
+      </form>
+    </article>
+
+    <hr />
     <h2>
       trying abbr
       <abbr title="World wide web"
         ><a href="https://en.wikipedia.org/wiki/World_Wide_Web">www</a></abbr
       >
     </h2>
-    <h3>trying h3 text</h3>
-    <p>This is strong<strong> trying this functions</strong></p>
-    <p>I am currently residing on philepens</p>
-    <address>Negros oriental, dumaguete city</address>
+    <section>
+      <h3>trying h3 text</h3>
+      <p>This is strong<strong> trying this functions</strong></p>
+      <p>I am currently residing on philepens</p>
+      <address>Negros oriental, dumaguete city</address>
+    </section>
     <hr />
-    &lt;&lt;&lt;&copy;<a href="about.html">Clyde Garcia</a>&gt;&gt;&gt;
-    <a href="Download.mp4" download>take a look</a>
+    <section id="contact">
+      &lt;&lt;&lt;&copy;<a href="about.html">Clyde Garcia</a>&gt;&gt;&gt;
+      <a href="Download.mp4" download>take a look</a>
+    </section>
   </body>
 </html>
