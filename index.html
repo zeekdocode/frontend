@@ -170,44 +170,148 @@
       <h2>Connect with me</h2>
       <p>If you want to work with me connect with me with this</p>
 
-      <form action="https://httpbin.org/get" method="get">
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Information</legend>
+          <div>
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Type your fisrtname here"
+              autocomplete="on"
+              required
+            />
+            <!--autofocus-->
+          </div>
+          <div>
+            <label for="lastname">Last Name:</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Type your lastname here"
+              autocomplete="on"
+              required
+            />
+            <!--autofocus-->
+          </div>
+          <div>
+            <label for="password">password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Type your password here"
+
+              required
+            />
+          <div>
+            <label for="phone">phone:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="tel"
+              placeholder="+639*********"
+            pattern="[+639][0-9]{3}[0-9]{3}[0-9]{4}"
+              required
+            />
+            <!--autofocus-->
+          </div>
+          <div>
+            <label for="decade">fave decade</label>
+            <input type="number" name="decade" id="decade" min="1900" max="2020" step="10" value="1970">
+          </div>
+          <div>       <label for="icecream">
+            favorite icecream
+          </label>
+          
+        <select name="icecream" id="icecream">
+          <optgroup label="plain flavor">
+          <option value="matcha">Matcha</option>
+          <option value="vanilla" selected>Vanilla</option>
+          <option value="cheese">Cheese</option>
+          <option value="mango">Mango</option>
+          <option value="strawberry">Strawberry</option>
+          </optgroup>
+          <optgroup label="flavored icecream">
+          <option value="rocky road"> Rocky Road</option>
+          <option value="cookies and cream"> Cookies and Cream</option>
+
+        </optgroup>
+          <option value="other">Other</option>
+
+
+        </select>       
+      </div>
+      <label for="icecream">Favortie Ice Cream</label>
+      <input type="text" name="icecream" id="icecream" list="icecream-list">
+      <datalist id="icecream-list">
+        <option value="matcha">
+        <option value="mint">
+        <option value="strawberry">
+        <option value="rocky road">
+        <option value="vanilla">
+        <option value="mango">
+        <option value="cookies and cream">
+      </datalist>
+
+
+
+
+      </fieldset> 
+      <br>
+      <fieldset>
+        <legend>What is your favorite food</legend>
         <div>
-          <label for="firstName">First Name:</label>
-          <input
-            type="text"
-            name="firstName"
-            id="firstName"
-            placeholder="Type your fisrtname here"
-            autocomplete="on"
-            required
-          />
-          <!--autofocus-->
+          <input type="radio" name="food" id="tacos" value="tacos"
+          <label for="tacos">Tacos</label>
+          <input type="radio" name="food" id="hotdog" value ="hotdog"
+           <label for="hotdog">Hotdog</label>
+          <input type="radio" name="food" id="sanwhich" value="sanwhich"
+          <label for="sanwhich">Sanwhich</label>
+      
+
         </div>
+
+
+
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Do you have a pet</legend>
         <div>
-          <label for="lastname">Last Name:</label>
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            placeholder="Type your lastname here"
-            autocomplete="on"
-            required
-          />
-          <!--autofocus-->
+          <input type="checkbox" name="pets" id="dog" value="dog">
+          <label>Dog</label>
+          <input type="checkbox" name="pets" id="cat" value="cat">
+          <label>Cat</label>
+          <input type="checkbox" name="pets" id="bird" value="bird">
+          <label>Bird</label>
+          
         </div>
-        <div>
-          <label for="password">password:</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Type your password here"
-            autocomplete="on"
-            required
-          />
-          <!--autofocus-->
-        </div>
-      </form>
+      
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Send me a message</legend>
+        <label for="message">Your message here</label>
+        <br>
+      <textarea name="message" id="message" cols=30" rows="10" placeholder="Type your message here:" ></textarea>
+
+
+
+
+
+      </fieldset>
+      <br>
+      <button type="submit">Submit</button>
+      <button type="submit" formaction="https://httpbin.org/post" formmethod="post">post</button>
+      <button type="reset">Reset</button>
+      
+      
+        </form>
     </article>
 
     <hr />
